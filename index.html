@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>To-DO List</h1>
+    <div class="container_upperFields">
+      <input
+        class="upperFields"
+        id="addItem"
+        placeholder="Item Name"
+        type="text"
+      />
+      <input
+        class="upperFields"
+        id="deadline"
+        placeholder="Deadline"
+        type="date"
+      />
+      <select class="upperFields" id="priority">
+        <option value="" selected disabled hidden>Priority</option>
+        <option value="high">High</option>
+        <option value="medium">Medium</option>
+        <option value="low">Low</option>
+      </select>
+      <button onclick="handleSubmit(event)" class="upperFields" id="btn">Add Item</button>
+    </div>
+    <div class="list" id="todayList">
+      <h1>Today’s TodoList</h1>
+      <div class="list_items">
+        <!-- <div class="list_item">
+          <div>1.Kapil Krihsna Yadav</div>
+          <div>25/06/2025</div>
+          <div>Medium</div>
+          <div>
+            <span
+              ><img width="25" src="./check-circle 1@2x.png" alt="" srcset=""
+            /></span>
+            <span><img width="25" src="./trash 1.png" alt="" /></span>
+          </div>
+        </div> -->
+        <!-- <div class="list_item">
+          <div>1.Kapil Krihsna Yadav</div>
+          <div>25/06/2025</div>
+          <div>Medium</div>
+          <div>
+            <span
+              ><img width="25" src="./check-circle 1@2x.png" alt="" srcset=""
+            /></span>
+            <span><img width="25" src="./trash 1.png" alt="" /></span>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="list" id="futurList">
+      <h1>Future TodoList</h1>
+      <div class="list_items">
+        <!-- <div class="list_item">
+          <div>1.Kapil Krihsna Yadav</div>
+          <div>25/06/2025</div>
+          <div>Medium</div>
+          <div>
+            <span
+              ><img width="25" src="./check-circle 1@2x.png" alt="" srcset=""
+            /></span>
+            <span><img  onclick="todoDelete(event)" width="25" src="./trash 1.png" alt="" /></span>
+          </div>
+        </div> -->
+        <!-- <div class="list_item">
+          <div>1.Kapil Krihsna Yadav</div>
+          <div>25/06/2025</div>
+          <div>Medium</div>
+          <div>
+            <span
+              ><img width="25" src="./check-circle 1@2x.png" alt="" srcset=""
+            /></span>
+            <span><img width="25" src="./trash 1.png" alt="" /></span>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="list" id="completedList">
+      <h1>Completed TodoList</h1>
+      <div class="list_items">
+        <div class="list_item">
+          <div>1.Kapil Krihsna Yadav</div>
+          <div>25/06/2025</div>
+          <div>Medium</div>
+          <div>
+            <span
+              ><img width="25" src="./check-circle 1@2x.png" alt="" srcset=""
+            /></span>
+            <span><img width="25" src="./trash 1.png" alt="" /></span>
+          </div>
+        </div>
+        <div class="list_item">
+          <div>1.Kapil Krihsna Yadav</div>
+          <div>25/06/2025</div>
+          <div>Medium</div>
+          <div>
+            <span
+              ><img width="25" src="./check-circle 1@2x.png" alt="" srcset=""
+            /></span>
+            <span><img style="filter: invert(1);" width="25" src="./trash 1.png" alt="" /></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
